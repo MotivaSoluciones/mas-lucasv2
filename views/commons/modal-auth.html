@@ -1,0 +1,139 @@
+<div id="modal-auth" class="modal">
+	<div class="modal-container container">
+		<div class="info">
+			<p class="tooltip"><b>&iexcl;Hola te estaba esperando!</b> para seguir ganando platita extra juntos.</p>
+			<img onclick="testFunction()" src="../../images/layout/login-avatar.png">
+		</div>
+		<div class="form">
+
+			<form class="auth-form auth-form--login">
+				<button type="button" class="modal__close">
+					<i class="icon-close"></i>
+				</button>
+				<h3 class="auth-form__title">Inicia Sesi&oacute;n</h3>
+				<h4 class="auth-form__subtitle">Ingresa tus datos de acceso y <br> sigue ganando platita extra</h4>
+				<div class="auth-form__input">
+					<span class="auth-form__input-dot"></span>
+					<input class="auth-form__input-val" type="text" placeholder="Usuario" />
+				</div>
+				<div class="auth-form__input">
+					<span class="auth-form__input-dot"></span>
+					<input class="auth-form__input-val" type="password" placeholder="Contrase&ntilde;a" />
+				</div>
+				<div class="auth-form__options">
+					<label class="checkbox auth-form__check">
+						<input class="checkbox__value" type="checkbox" hidden>
+						<span class="checkbox__icon auth-form__check-square">
+							<i class="icon-check" hidden></i>
+						</span>
+						<span class="checkbox__label auth-form__check-label">Recordar mi cuenta</span>
+					</label>
+					<button id="btn-reset" class="auth-form__forgot" type="button">&iquest;Olvidaste tu contrase&ntilde;a?</button>
+				</div>
+				<button id="btn-login" class="auth-form__submit" type="button">Iniciar Sesi&oacute;n</button>
+				<p class="auth-form__label">&iquest;A&uacute;n no eres parte de +Lucas?</p>
+				<button id="btn-signup" class="auth-form__other-action" type="button">Reg&iacute;strate</button>
+			</form>
+
+			<form class="auth-form auth-form--signup">
+				<button type="button" class="modal__close">
+					<i class="icon-close"></i>
+				</button>
+				<h3 class="auth-form__title">Reg&iacute;strate</h3>
+				<h4 class="auth-form__subtitle">Reg&iacute;strate y empieza a ganar platita extra de la forma m&aacute;s sencilla</h4>
+				<div class="auth-form__input">
+					<span class="auth-form__input-dot"></span>
+					<input class="auth-form__input-val" type="text" placeholder="Nombre" />
+				</div>
+				<div class="auth-form__input">
+					<span class="auth-form__input-dot"></span>
+					<input class="auth-form__input-val" type="text" placeholder="Apellido" />
+				</div>
+				<div class="auth-form__input">
+					<span class="auth-form__input-dot"></span>
+					<input class="auth-form__input-val" type="text" placeholder="DNI" />
+				</div>
+				<div class="auth-form__input">
+					<span class="auth-form__input-dot"></span>
+					<input class="auth-form__input-val" type="text" placeholder="Correo" />
+				</div>
+				<div class="auth-form__input">
+					<span class="auth-form__input-dot"></span>
+					<input class="auth-form__input-val" type="text" placeholder="Crea un usuario" />
+				</div>
+				<div class="auth-form__input">
+					<span class="auth-form__input-dot"></span>
+					<input class="auth-form__input-val" type="password" placeholder="Crea una contrase&ntilde;a" />
+				</div>
+				<label class="checkbox auth-form__check auth-form__check--tyc">
+					<input class="checkbox__value" type="checkbox" hidden>
+					<span class="checkbox__icon auth-form__check-square">
+						<i class="icon-check" hidden></i>
+					</span>
+					<span class="checkbox__label auth-form__check-label">Aceptar los <b>t&eacute;rminos y condiciones</b></span>
+				</label>
+				<label class="checkbox auth-form__check">
+					<input class="checkbox__value" type="checkbox" hidden>
+					<span class="checkbox__icon auth-form__check-square">
+						<i class="icon-check" hidden></i>
+					</span>
+					<span class="checkbox__label auth-form__check-label">Acepto el uso de mi informaci&oacute;n para <b>fines adicionales</b></span>
+				</label>
+				<button class="auth-form__submit" type="button">Registrarme</button>
+			</form>
+
+			<form class="auth-form auth-form--reset">
+				<button type="button" class="modal__close">
+					<i class="icon-close"></i>
+				</button>
+				<h3 class="auth-form__title">Restablecer <br> contrase&ntilde;a</h3>
+				<h4 class="auth-form__subtitle">Selecciona la opci&oacute;n con la que deseas <br> restablecer tu contrase&ntilde;a</h4>
+				<div class="reset-options">
+					<div class="reset-option reset-option--phone">
+						<button class="reset-option__icon shape" type="button">
+							<img src="../../images/layout/shape-reset.png" class="shape__box">
+							<i class="icon-reset-phone shape__text"></i>
+						</button>
+						<button type="button" class="reset-option__text">Por tel&eacute;fono</button>
+					</div>
+					<div class="reset-option reset-option--mail">
+						<button class="reset-option__icon shape" type="button">
+							<img src="../../images/layout/shape-reset.png" class="shape__box">
+							<i class="icon-reset-mail shape__text"></i>
+						</button>
+						<button type="button" class="reset-option__text">Por correo</button>
+					</div>
+				</div>
+				<div class="reset-phone">
+					<p class="reset-phone__current">+51 956 684 963</p>
+					<button class="reset__send" type="button">Enviar c&oacute;digo</button>
+				</div>
+				<div class="reset-mail">
+					<p class="reset-mail__current">tucorreo@gmail.com</p>
+					<button class="reset__send" type="button">Enviar c&oacute;digo</button>
+				</div>
+				<div class="reset-code">
+					<div class="reset-code__input">
+						<input class="reset-code__input-val" type="number">
+						<input class="reset-code__input-val" type="number">
+						<input class="reset-code__input-val" type="number">
+						<input class="reset-code__input-val" type="number">
+						<input class="reset-code__input-val" type="number">
+					</div>
+					<button class="reset__confirm" type="button">Confirmar</button>
+				</div>
+				<div class="reset-confirm">
+					<div class="auth-form__input">
+						<span class="auth-form__input-dot"></span>
+						<input class="auth-form__input-val" type="text" placeholder="Contrase&ntilde;a" />
+					</div>
+					<div class="auth-form__input">
+						<span class="auth-form__input-dot"></span>
+						<input class="auth-form__input-val" type="password" placeholder="Confirmar contrase&ntilde;a" />
+					</div>
+					<button class="reset__confirm" type="button">Restablecer</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
